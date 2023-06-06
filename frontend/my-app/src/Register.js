@@ -55,6 +55,7 @@ function Register() {
 
         <Link to = "/login" className='btn-login'> Log in </Link>
         <button type='submit' className='btn-sing-Up'> Sing Up </button>
+        <p>Hola mundo</p>
 
     </form>
     
@@ -64,3 +65,4 @@ function Register() {
 }
 
 export default Register
+
