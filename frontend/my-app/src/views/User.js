@@ -27,31 +27,16 @@ function User() {
 
       .coolinput
       <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Control type="text" placeholder="Nombre" />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Control type="text" placeholder="Apellidos" />
+      </Form.Group>
+
+
+      <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control type="email" placeholder="" />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="MENDIA" />
-      </Form.Group>
-
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="SOTO" />
-      </Form.Group>
-
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="DEMECIO GILBERTO" />
-      </Form.Group>
-
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="MENDIA" />
-      </Form.Group>
-
-
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="SOTO" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
