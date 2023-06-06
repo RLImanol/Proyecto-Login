@@ -1,0 +1,96 @@
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-group{
+    border: 1px solid black;
+  }
+  .layout{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 5fr 2fr 2fr 2fr 2fr 1fr ;
+    grid-template-areas: 
+                         'content2'
+                         'content3'
+                         'content8';
+                         
+  }
+  .content1{
+    grid-area: content1;
+    background-color: rgb(9, 91, 64);
+    border: 1px solid black;
+  }
+  .content2{
+    color: black; 
+    border: 1px solid black;
+    grid-area: content2;
+    background-color: rgb(208, 216, 212);
+  }
+  .content3{
+    border: 1px solid black;
+    grid-area: content3;
+    background-color: rgb(255,255,255);
+  }
+  
+  
+  .content8{
+    border: 1px solid black;
+    grid-area: content8;
+    background-color: rgb(218, 214, 219);
+  }
+  
+  @media only screen and (min-width: 768px){
+    .layout{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr 5fr 2fr 2fr 2fr 2fr 1fr ;
+        grid-template-areas: 
+                             'content8 content2 content2 content2'
+                             'content8 content3 content3 content3'
+                             'content8 content3 content3 content3'
+                             'content8 content3 content3 content3'
+                             'content8 content3 content3 content3'
+                             'content8 content3 content3 content3'
+                             'content8 content3 content3 content3';
+                             
+    }
+  
+}
+
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 240px;
+  }
+  
+  .coolinput label.text {
+    font-size: 0.75rem;
+    color: #818CF8;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #e8e8e8;
+    width: fit-content;
+  }
+  
+  .coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #818CF8 solid;
+    border-radius: 5px;
+    background: #e8e8e8;
+  }
+  
+  .coolinput input[type=text].input:focus {
+    outline: none;
+  }
